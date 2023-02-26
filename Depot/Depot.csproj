@@ -38,7 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\Transactions\Transaction\Requests" />
+    <Folder Include="API\Requisitions\Requests" />
+    <Folder Include="API\Requisitions\Responses" />
     <Folder Include="Repositories\Users\" />
   </ItemGroup>
 

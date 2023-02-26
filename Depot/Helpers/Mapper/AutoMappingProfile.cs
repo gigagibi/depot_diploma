@@ -11,6 +11,8 @@ using Depot.API.Entities.EntityModels.Requests;
 using Depot.API.Entities.EntityModels.Responses;
 using Depot.API.Entities.EntityTypes.Requests;
 using Depot.API.Entities.EntityTypes.Responses;
+using Depot.API.Requisitions.RequisitionStatuses.Requests;
+using Depot.API.Requisitions.RequisitionStatuses.Responses;
 using Depot.API.Transactions.Transaction.Responses;
 using Depot.API.Transactions.TransactionTypes.Requests;
 using Depot.API.Transactions.TransactionTypes.Responses;
@@ -19,6 +21,7 @@ using Depot.API.Users.Responses;
 using Depot.Helpers.Mapper.ValueResolvers;
 using Depot.Models.Departments;
 using Depot.Models.Entities;
+using Depot.Models.Requisitions;
 using Depot.Models.Transactions;
 using Depot.Models.Users;
 using Microsoft.AspNetCore.JsonPatch;
@@ -84,5 +87,11 @@ public class AutoMappingProfile : Profile
         CreateMap<TransactionTypeUpdateRequest, TransactionType>();
         
         CreateMap<Transaction, TransactionGetResponse>();
+        
+        CreateMap<RequisitionStatus, RequisitionStatusGetResponse>();
+        CreateMap<RequisitionStatus, RequisitionStatusCreateResponse>();
+        CreateMap<RequisitionStatus, RequisitionStatusUpdateResponse>();
+        CreateMap<RequisitionStatusCreateRequest, RequisitionStatus>();
+        CreateMap<RequisitionStatusUpdateRequest, RequisitionStatus>();
     }
 }
