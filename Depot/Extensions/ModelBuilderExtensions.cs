@@ -13,8 +13,9 @@ public static class ModelBuilderExtensions
     {
         var roles = new List<Role>()
         {
-            new Role { Id = -2, Name = RoleNames.Admin, NormalizedName = "ADMIN" },
-            new Role { Id = -1, Name = RoleNames.User, NormalizedName = "USER" }
+            new Role { Id = -3, Name = RoleNames.Admin, NormalizedName = RoleNames.Admin.ToUpper() },
+            new Role { Id = -2, Name = RoleNames.Operator, NormalizedName = RoleNames.Operator.ToUpper() },
+            new Role { Id = -1, Name = RoleNames.User, NormalizedName = RoleNames.User.ToUpper() }
         };
         modelBuilder.Entity<Role>().HasData(roles);
         
@@ -22,14 +23,25 @@ public static class ModelBuilderExtensions
         {
             new Employee()
             {
-                Id = -2,
+                Id = -3,
                 Archived = false,
                 FIO = "Admin",
                 DepartmentId = -3,
                 Phone = "88005553535",
-                UserId = -2,
+                UserId = -3,
                 Email = "admin@admin.ru",
                 Link = "admin link",
+            },
+            new Employee()
+            {
+                Id = -2,
+                Archived = false,
+                FIO = "Operator",
+                DepartmentId = -3,
+                Phone = "88005553535",
+                UserId = -2,
+                Email = "operator@operator.ru",
+                Link = "operator link",
             },
             new Employee()
             {
@@ -48,11 +60,20 @@ public static class ModelBuilderExtensions
         {
             new User
             {
-                Id = -2,
+                Id = -3,
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
                 Email = "admin@admin.com",
                 NormalizedEmail = "ADMIN@ADMIN.COM",
+                EmployeeId = -3
+            },
+            new User
+            {
+                Id = -2,
+                UserName = "operator",
+                NormalizedUserName = "OPERATOR",
+                Email = "operator@operator.com",
+                NormalizedEmail = "OPERATOR@OPERATOR.COM",
                 EmployeeId = -2
             },
             new User
@@ -70,7 +91,8 @@ public static class ModelBuilderExtensions
 
         var passwordHasher = new PasswordHasher<User>();
         users[0].PasswordHash = passwordHasher.HashPassword(users[0], "admin");
-        users[1].PasswordHash = passwordHasher.HashPassword(users[1], "user");
+        users[1].PasswordHash = passwordHasher.HashPassword(users[1], "operator");
+        users[2].PasswordHash = passwordHasher.HashPassword(users[1], "user");
 
         var userRoles = new List<IdentityUserRole<int>>();
         userRoles.Add(new IdentityUserRole<int>
@@ -81,6 +103,11 @@ public static class ModelBuilderExtensions
         userRoles.Add(new IdentityUserRole<int>
         {
             UserId = users[1].Id,
+            RoleId = roles.First(q => q.Name == RoleNames.Operator).Id
+        });
+        userRoles.Add(new IdentityUserRole<int>
+        {
+            UserId = users[2].Id,
             RoleId = roles.First(q => q.Name == RoleNames.User).Id
         });
         modelBuilder.Entity<IdentityUserRole<int>>().HasData(userRoles);

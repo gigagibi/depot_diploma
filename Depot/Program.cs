@@ -28,6 +28,10 @@ using Depot.Services.Entities.EntitiesTypes;
 using Depot.Services.Entities.EntityModels;
 using Depot.Services.Transactions;
 
+// TODO Сущность "заявка" на бронирование
+// TODO Функционал оператора
+// TODO Изменение функционала сотрудника чтобы создавалась заявка
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true);
 builder.Configuration.AddEnvironmentVariables();

@@ -6,6 +6,7 @@ public static class RoleNames
 {
     public const string Admin = "Admin";
     public const string User = "User";
+    public const string Operator = "Operator";
 
     public static IEnumerable<string> AllRoles
     {
@@ -13,6 +14,7 @@ public static class RoleNames
         {
             yield return Admin;
             yield return User;
+            yield return Operator;
         }
     }
 }
