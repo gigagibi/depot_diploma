@@ -1,5 +1,6 @@
 ﻿using Depot.Models.Departments;
 using Depot.Models.Entities;
+using Depot.Models.Requisitions;
 using Depot.Models.Transactions;
 using Depot.Models.Users;
 using Microsoft.AspNetCore.Identity;
@@ -26,7 +27,6 @@ public static class ModelBuilderExtensions
                 Id = -3,
                 Archived = false,
                 FIO = "Admin",
-                DepartmentId = -3,
                 Phone = "88005553535",
                 UserId = -3,
                 Email = "admin@admin.ru",
@@ -37,7 +37,6 @@ public static class ModelBuilderExtensions
                 Id = -2,
                 Archived = false,
                 FIO = "Operator",
-                DepartmentId = -3,
                 Phone = "88005553535",
                 UserId = -2,
                 Email = "operator@operator.ru",
@@ -48,7 +47,6 @@ public static class ModelBuilderExtensions
                 Id = -1,
                 Archived = false,
                 FIO = "User",
-                DepartmentId = -3,
                 Phone = "88005553535",
                 UserId = -1,
                 Email = "user@user.ru",
@@ -111,6 +109,32 @@ public static class ModelBuilderExtensions
             RoleId = roles.First(q => q.Name == RoleNames.User).Id
         });
         modelBuilder.Entity<IdentityUserRole<int>>().HasData(userRoles);
+    }
+
+    public static void SeedRequisitionsStatuses(this ModelBuilder modelBuilder)
+    {
+        var statuses = new List<RequisitionStatus>()
+        {
+            new RequisitionStatus()
+            {
+                Id = -3,
+                Archived = false,
+                Name = RequisitionStatusName.Created
+            },
+            new RequisitionStatus()
+            {
+                Id = -2,
+                Archived = false,
+                Name = RequisitionStatusName.Approved
+            },
+            new RequisitionStatus()
+            {
+                Id = -1,
+                Archived = false,
+                Name = RequisitionStatusName.Declined
+            }
+        };
+        modelBuilder.Entity<RequisitionStatus>().HasData(statuses);
     }
     
     public static void Seed(this ModelBuilder modelBuilder)

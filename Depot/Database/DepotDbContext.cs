@@ -1,6 +1,7 @@
 ﻿using Depot.Extensions;
 using Depot.Models.Departments;
 using Depot.Models.Entities;
+using Depot.Models.Requisitions;
 using Depot.Models.Transactions;
 using Depot.Models.Users;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -26,6 +27,10 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
         
     public DbSet<TransactionType> TransactionTypes { get; set; }
 
+    public DbSet<Requisition> Requisitions { get; set; }
+
+    public DbSet<RequisitionStatus> RequisitionsStatuses { get; set; }
+
     public DepotDbContext(DbContextOptions<DepotDbContext> options) : base(options)
     {
     }
@@ -39,6 +44,7 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
             builder.Seed();
         }
         builder.SeedRolesAndUsers();
+        builder.SeedRequisitionsStatuses();
         builder.Entity<Employee>()
             .HasOne(a => a.User)
             .WithOne(b => b.Employee)
@@ -59,7 +65,7 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
         builder.Entity<Entity>()
             .HasIndex(e => e.InvNumber)
             .IsUnique();
-
+        
         builder.Entity<EntityModel>().Navigation(e => e.EntityType).AutoInclude();
         builder.Entity<EntityModel>().Navigation(e => e.EntityManufacture).AutoInclude();
         
@@ -70,7 +76,11 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
         builder.Entity<Transaction>().Navigation(e => e.Department).AutoInclude();
         builder.Entity<Transaction>().Navigation(e => e.EntityModel).AutoInclude();
         
-        
+        builder.Entity<Requisition>().Navigation(e => e.Employee).AutoInclude();
+        builder.Entity<Requisition>().Navigation(e => e.Entity).AutoInclude();
+        builder.Entity<Requisition>().Navigation(e => e.Operator).AutoInclude();
+        builder.Entity<Requisition>().Navigation(e => e.RequisitionStatus).AutoInclude();
+
         builder.Entity<Department>()
             .HasIndex(e => e.Name)
             .IsUnique();
@@ -78,7 +88,6 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
             .HasIndex(e => e.FIO)
             .IsUnique();
         
-        // unique names for ent types, ent manufactures, transaction types, ent models
         builder.Entity<EntityType>()
             .HasIndex(e => e.Name)
             .IsUnique();
