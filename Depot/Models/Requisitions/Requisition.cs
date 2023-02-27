@@ -26,12 +26,12 @@ public class Requisition : IGenericModel
     public Employee Employee { get; set; }
 
     [Column("employee_id")]
-    public Employee EmployeeId { get; set; }
+    public int EmployeeId { get; set; }
     
     public Employee Operator { get; set; }
 
     [Column("operator_id")]
-    public Employee OperatorId { get; set; }
+    public int OperatorId { get; set; }
 
     [Column("last_update")]
     public DateTime LastUpdateTime { get; set; }

@@ -10,8 +10,8 @@ public abstract class GenericDictionaryCrudService<TModel, TRepository, TGetResp
     where TUpdateResponse : class where TCreateResponse : class where TModel : class, IGenericModel
     where TRepository : IGenericRepository<TModel>
 {
-    private readonly IGenericRepository<TModel> _repository;
-    private readonly IMapper _mapper;
+    protected readonly IGenericRepository<TModel> _repository;
+    protected readonly IMapper _mapper;
 
     protected GenericDictionaryCrudService(IGenericRepository<TModel> repository, IMapper mapper)
     {

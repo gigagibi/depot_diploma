@@ -5,8 +5,8 @@ namespace Depot.Repositories;
 
 public interface IGenericRepository<T> where T : IGenericModel
 {
-    Task<T> CreateAsync(T entity);
-    Task<T> UpdateAsync(T entity);
+    Task<T> CreateAsync(T t);
+    Task<T> UpdateAsync(T t);
     Task DeleteAsync(int id);
     Task ArchiveAsync(int id);
     Task<T> GetAsync(int id, bool returnArchived = false);

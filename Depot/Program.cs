@@ -18,6 +18,7 @@ using Depot.Repositories.Entities;
 using Depot.Repositories.Entities.EntityManufactures;
 using Depot.Repositories.Entities.EntityModels;
 using Depot.Repositories.Entities.EntityTypes;
+using Depot.Repositories.Requisitions;
 using Depot.Repositories.Requisitions.RequisitionStatuses;
 using Depot.Repositories.Transactions;
 using Depot.Repositories.Users;
@@ -27,11 +28,13 @@ using Depot.Services.Entities;
 using Depot.Services.Entities.EntitiesManufactures;
 using Depot.Services.Entities.EntitiesTypes;
 using Depot.Services.Entities.EntityModels;
+using Depot.Services.Requisitions;
 using Depot.Services.Requisitions.RequisitionStatuses;
 using Depot.Services.Transactions;
 
 // TODO Функционал оператора
 // TODO Изменение функционала сотрудника чтобы создавалась заявка
+// TODO Когда пользователь резервирует оборудование, фронт создает заявку, а оператор потом резервирует оборудование
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true);
@@ -128,7 +131,8 @@ builder.Services.AddScoped<IEntityTypesRepository, EntityTypesRepository>();
 builder.Services.AddScoped<ITransactionsRepository, TransactionsRepository>();
 builder.Services.AddScoped<ITransactionTypesRepository, TransactionTypesRepository>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
-builder.Services.AddScoped<IRequisitionStatusesRepository, RequisitionStatusRepository>();
+builder.Services.AddScoped<IRequisitionStatusesRepository, RequisitionStatusesRepository>();
+builder.Services.AddScoped<IRequisitionsRepository, RequisitionsRepository>();
 
 builder.Services.AddScoped<IUsersService, UsersService>();
 builder.Services.AddScoped<IEmployeesService, EmployeesService>();
@@ -140,6 +144,7 @@ builder.Services.AddScoped<IEntityModelsService, EntityModelsService>();
 builder.Services.AddScoped<ITransactionsService, TransactionsService>();
 builder.Services.AddScoped<ITransactionTypesService, TransactionTypesService>();
 builder.Services.AddScoped<IRequisitionStatusesService, RequisitionStatusesService>();
+builder.Services.AddScoped<IRequisitionsService, RequisitionsService>();
 builder.Services.AddScoped<JwtHelper>();
 
 var app = builder.Build();
