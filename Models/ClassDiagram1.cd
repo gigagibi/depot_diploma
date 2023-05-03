@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Depot.Repositories.Departments.DepartmentsRepository" Collapsed="true">
+    <Position X="4.25" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Departments\DepartmentsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Employees.EmployeesRepository" Collapsed="true">
+    <Position X="15.5" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Employees\EmployeesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Entities.EntityManufactures.EquipmentManufacturesRepository" Collapsed="true">
+    <Position X="24.5" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityManufactures\EquipmentManufacturesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Entities.EntityModels.EquipmentModelsRepository" Collapsed="true">
+    <Position X="11" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityModels\EquipmentModelsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Entities.EntityTypes.EquipmentTypesRepository" Collapsed="true">
+    <Position X="17.75" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityTypes\EquipmentTypesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Entities.EquipmentsRepository" Collapsed="true">
+    <Position X="6.5" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAiAAAAgAAAAAAAACCAAAAAgCgAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EquipmentsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Requisitions.RequisitionStatuses.RequisitionStatusesRepository" Collapsed="true">
+    <Position X="20" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Requisitions\RequisitionStatuses\RequisitionStatusesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Requisitions.RequisitionsRepository" Collapsed="true">
+    <Position X="8.75" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAAAA=</HashCode>
+      <FileName>Repositories\Requisitions\RequisitionsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Transactions.TransactionsRepository" Collapsed="true">
+    <Position X="22.25" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Transactions\TransactionsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Transactions.TransactionTypesRepository" Collapsed="true">
+    <Position X="26.75" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Transactions\TransactionTypesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.Users.UsersRepository" Collapsed="true">
+    <Position X="13.25" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Users\UsersRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Repositories.GenericRepository&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAABAABAAAAAAAIAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Repositories\GenericRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Models.Departments.Department" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAABAAAAAAAQIAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Departments\Department.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Equipments.Equipment" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAEAAQAgAAAAAAAAIAIGAAAIIABAAEAAQBCQgA=</HashCode>
+      <FileName>Models\Equipments\Equipment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Equipments.EquipmentManufacture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQIAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Equipments\EquipmentManufacture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Equipments.EquipmentModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAgAAAAAAACAAQIQAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\Equipments\EquipmentModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Equipments.EquipmentType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Equipments\EquipmentType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Requisitions.Requisition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAIAAAAAQAAAAAAIKAAABAAAAIBBAAACIAA=</HashCode>
+      <FileName>Models\Requisitions\Requisition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Requisitions.RequisitionStatus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Requisitions\RequisitionStatus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Requisitions.RequisitionStatusName" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIAAAAAAEAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Requisitions\RequisitionStatusName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Depot.Models.Transactions.Transaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgCAIAEAA4AhAAAgAAAAIAIGAAAIIEBABEAAQBCQgA=</HashCode>
+      <FileName>Models\Transactions\Transaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Transactions.TransactionType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Transactions\TransactionType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Users.Employee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgADAAAAACAAgAAAAAAAAAgIEAAAAAAAAAAAYAAAAAA=</HashCode>
+      <FileName>Models\Users\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Users.Role" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Users\Role.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Models.Users.RoleNames" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Users\RoleNames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Depot.Models.Users.User" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Models\Users\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Controllers.Departments.DepartmentController" Collapsed="true">
+    <Position X="22.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Departments\DepartmentController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Employees.EmployeesController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAYCAAAIA=</HashCode>
+      <FileName>Controllers\Employees\EmployeesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Controllers.Equipments.EquipmentManufactures.EquipmentManufacturesController" Collapsed="true">
+    <Position X="36" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentManufactures\EquipmentManufacturesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Equipments.EquipmentModels.EquipmentModelController" Collapsed="true">
+    <Position X="27" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentModels\EquipmentModelController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Equipments.EquipmentTypes.EquipmentTypesController" Collapsed="true">
+    <Position X="31.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentTypes\EquipmentTypesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Equipments.EquipmentController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAIAAAAAAAAAAAAAAACGAAgCACAAIKAAAIA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Controllers.Requisitions.RequisitionStatuses.RequisitionStatusesController" Collapsed="true">
+    <Position X="33.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Requisitions\RequisitionStatuses\RequisitionStatusesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Requisitions.RequisitionsController" Collapsed="true">
+    <Position X="24.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Requisitions\RequisitionsController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Transactions.TransactionTypes.TransactionTypesController" Collapsed="true">
+    <Position X="29.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Transactions\TransactionTypes\TransactionTypesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Controllers.Transactions.TransactionsController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAA=</HashCode>
+      <FileName>Controllers\Transactions\TransactionsController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Controllers.Users.UsersController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAIAAAAAAAgAAAAAIKAAAIE=</HashCode>
+      <FileName>Controllers\Users\UsersController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Controllers.GenericDictionaryCrudController&lt;TService, TGetResponse, TCreateRequest, TUpdateRequest, TCreateResponse, TUpdateResponse&gt;" Collapsed="true">
+    <Position X="29.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Controllers\GenericDictionaryCrudController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Database.DepotDbContext" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAACAACAAAAAAGAAIKAAAACEAgAAAAAA=</HashCode>
+      <FileName>Database\DepotDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Depot.Services.Departments.DepartmentService" Collapsed="true">
+    <Position X="22.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Departments\DepartmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Employees.EmployeesService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEUABwAAAAAAAAAAAAABAAAAAAAAAAgAAAAAICAAAIA=</HashCode>
+      <FileName>Services\Employees\EmployeesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Services.Entities.EntitiesManufactures.EquipmentManufactureService" Collapsed="true">
+    <Position X="33.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntitiesManufactures\EquipmentManufactureService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Entities.EntitiesTypes.EquipmentTypesService" Collapsed="true">
+    <Position X="27" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntitiesTypes\EquipmentTypesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Entities.EntityModels.EquipmentModelsService" Collapsed="true">
+    <Position X="29.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntityModels\EquipmentModelsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Entities.EquipmentService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAEAAAIAAAABAAABAAAAIASGAAgAASAAIKIAAIA=</HashCode>
+      <FileName>Services\Entities\EquipmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Services.Requisitions.RequisitionStatuses.RequisitionStatusesService" Collapsed="true">
+    <Position X="31.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Requisitions\RequisitionStatuses\RequisitionStatusesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Requisitions.RequisitionsService" Collapsed="true">
+    <Position X="24.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Requisitions\RequisitionsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Transactions.TransactionsService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAABAAAAAAQAAAABAAAEIAAAAAA=</HashCode>
+      <FileName>Services\Transactions\TransactionsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Services.Transactions.TransactionTypesService" Collapsed="true">
+    <Position X="36" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Transactions\TransactionTypesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Depot.Services.Users.UsersService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAUABQAAAAAAAAAAAAABAAIAAAAQAAAAAAAAIKAAAoE=</HashCode>
+      <FileName>Services\Users\UsersService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Depot.Services.GenericDictionaryCrudService&lt;TModel, TRepository, TGetResponse, TUpdateRequest, TCreateRequest, TUpdateResponse, TCreateResponse&gt;" Collapsed="true">
+    <Position X="29.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAABAAAAAAAABAAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Services\GenericDictionaryCrudService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Depot.Repositories.Departments.IDepartmentsRepository" Collapsed="true">
+    <Position X="8.75" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Departments\IDepartmentsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Employees.IEmployeesRepository" Collapsed="true">
+    <Position X="22.25" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Employees\IEmployeesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Entities.EntityManufactures.IEquipmentManufacturesRepository" Collapsed="true">
+    <Position X="4.25" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityManufactures\IEquipmentManufacturesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Entities.EntityModels.IEntityModelsRepository" Collapsed="true">
+    <Position X="15.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityModels\IEquipmentModelsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Entities.EntityTypes.IEquipmentTypesRepository" Collapsed="true">
+    <Position X="24.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\EntityTypes\IEquipmentTypesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Entities.IEquipmentsRepository" Collapsed="true">
+    <Position X="11" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAiAAAAgAAAAAAAACCAAAAAgCgAAAAAAAA=</HashCode>
+      <FileName>Repositories\Entities\IEquipmentsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Requisitions.RequisitionStatuses.IRequisitionStatusesRepository" Collapsed="true">
+    <Position X="17.75" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Requisitions\RequisitionStatuses\IRequisitionStatusesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Requisitions.IRequisitionsRepository" Collapsed="true">
+    <Position X="26.75" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Requisitions\IRequisitionsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Transactions.ITransactionsRepository" Collapsed="true">
+    <Position X="13.25" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Transactions\ITransactionsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Transactions.ITransactionTypesRepository" Collapsed="true">
+    <Position X="20" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Transactions\ITransactionTypesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.Users.IUsersRepository" Collapsed="true">
+    <Position X="6.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Users\IUsersRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Repositories.IGenericRepository&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Repositories\IGenericRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Models.IGenericModel" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IGenericModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Departments.IDepartmentController" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Departments\IDepartmentController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Employees.IEmployeesController" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAICAAAIA=</HashCode>
+      <FileName>Controllers\Employees\IEmployeesController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Equipments.EquipmentManufactures.IEquipmentManufacturesController" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentManufactures\IEquipmentManufacturesController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Equipments.EquipmentModels.IEquipmentModelController" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentModels\IEquipmentModelController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Equipments.EquipmentTypes.IEquipmentTypesController" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Equipments\EquipmentTypes\IEquipmentTypesController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Equipments.IEquipmentController" Collapsed="true">
+    <Position X="31.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAIAAAAAAAAAAAAAAACGAAgAACAAIKAAAIA=</HashCode>
+      <FileName>Controllers\Equipments\IEquipmentController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Requisitions.RequisitionStatuses.IRequisitionStatusesController" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Requisitions\RequisitionStatuses\IRequisitionStatusesController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Requisitions.IRequisitionsController" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Requisitions\IRequisitionsController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Transactions.TransactionTypes.ITransactionTypesController" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Transactions\TransactionTypes\ITransactionTypesController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Transactions.ITransactionsController" Collapsed="true">
+    <Position X="29.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Controllers\Transactions\ITransactionsController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.Users.IUsersController" Collapsed="true">
+    <Position X="33.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAgAAAAAIKAAAIE=</HashCode>
+      <FileName>Controllers\Users\IUsersController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Controllers.IGenericDictionaryCrudController&lt;TCreateRequest, TUpdateRequest&gt;" Collapsed="true">
+    <Position X="29.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Controllers\IGenericDictionaryCrudController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Departments.IDepartmentService" Collapsed="true">
+    <Position X="24.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Departments\IDepartmentService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Employees.IEmployeesService" Collapsed="true">
+    <Position X="27" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAICAAAIA=</HashCode>
+      <FileName>Services\Employees\IEmployeesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Entities.EntitiesManufactures.IEquipmentManufactureService" Collapsed="true">
+    <Position X="22.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntitiesManufactures\IEquipmentManufactureService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Entities.EntitiesTypes.IEquipmentTypesService" Collapsed="true">
+    <Position X="27" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntitiesTypes\IEquipmentTypesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Entities.EntityModels.IEquipmentModelsService" Collapsed="true">
+    <Position X="33.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Entities\EntityModels\IEquipmentModelsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Entities.IEquipmentsService" Collapsed="true">
+    <Position X="31.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAEAAAIAAAAAAAAAAAAAAACGAAgAACAAIKAAAIA=</HashCode>
+      <FileName>Services\Entities\IEquipmentsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Requisitions.RequisitionStatuses.IRequisitionStatusesService" Collapsed="true">
+    <Position X="29.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Requisitions\RequisitionStatuses\IRequisitionStatusesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Requisitions.IRequisitionsService" Collapsed="true">
+    <Position X="36" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Requisitions\IRequisitionsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Transactions.ITransactionsService" Collapsed="true">
+    <Position X="29.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEIAAAAAA=</HashCode>
+      <FileName>Services\Transactions\ITransactionsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Transactions.ITransactionTypesService" Collapsed="true">
+    <Position X="31.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Transactions\ITransactionTypesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.Users.IUsersService" Collapsed="true">
+    <Position X="33.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAIKAAAoE=</HashCode>
+      <FileName>Services\Users\IUsersService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Depot.Services.IGenericDictionaryCrudService&lt;TGetResponse, TUpdateRequest, TCreateRequest, TUpdateResponse, TCreateResponse&gt;" Collapsed="true">
+    <Position X="29.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIKAAAIA=</HashCode>
+      <FileName>Services\IGenericDictionaryCrudService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -5,7 +5,7 @@ using Depot.API.Transactions.Transaction.Responses;
 
 namespace Depot.Services.Requisitions;
 
-public interface IRequisitionsService : IGenericDictionaryCrudService<RequisitionGetResponse, RequisitionUpdateRequest, RequisitionCreateRequest, RequisitionUpdateResponse, RequisitionCreateResponse>
+public interface IRequisitionsService : IGenericDictionaryCrudService<RequisitionGetResponse, RequisitionsUpdateRequest, RequisitionsCreateRequest, RequisitionUpdateResponse, RequisitionCreateResponse>
 {
     Task<RequisitionUpdateResponse> SetStatus(int id, int statusId);
 }

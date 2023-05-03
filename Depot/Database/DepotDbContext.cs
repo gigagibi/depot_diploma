@@ -31,6 +31,8 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
 
     public DbSet<RequisitionStatus> RequisitionsStatuses { get; set; }
 
+    public DbSet<Position> Positions { get; set; }
+
     public DepotDbContext(DbContextOptions<DepotDbContext> options) : base(options)
     {
     }
@@ -56,7 +58,8 @@ public class DepotDbContext : IdentityDbContext<User, Role, int>
             .HasForeignKey<Employee>(b => b.UserId);
         
         builder.Entity<Employee>().Navigation(e => e.User).AutoInclude();
-        
+        builder.Entity<Employee>().Navigation(e => e.Position).AutoInclude();
+
         builder.Entity<User>().Navigation(e => e.Employee).AutoInclude();
         
         builder.Entity<Entity>().Navigation(e => e.Employee).AutoInclude();

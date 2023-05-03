@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Depot.Controllers.Requisitions;
 
-public interface IRequisitionsController : IGenericDictionaryCrudController<RequisitionCreateRequest, RequisitionUpdateRequest>
+public interface IRequisitionController : IGenericDictionaryCrudController<RequisitionsCreateRequest, RequisitionsUpdateRequest>
 {
     Task<IActionResult> SetStatus(int id, int statusId);
 }

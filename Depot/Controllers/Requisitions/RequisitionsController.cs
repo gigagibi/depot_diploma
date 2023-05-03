@@ -1,14 +1,15 @@
 ﻿using Depot.API.Requisitions.Requests;
 using Depot.API.Requisitions.Responses;
+using Depot.Controllers.Requisitions.RequisitionStatuses;
 using Depot.Exceptions;
 using Depot.Services.Requisitions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Depot.Controllers.Requisitions;
 
-public class RequisitionsController : GenericDictionaryCrudController<IRequisitionsService, RequisitionGetResponse, RequisitionCreateRequest, RequisitionUpdateRequest, RequisitionCreateResponse, RequisitionUpdateResponse>, IRequisitionsController
+public class RequisitionController : GenericDictionaryCrudController<IRequisitionsService, RequisitionGetResponse, RequisitionsCreateRequest, RequisitionsUpdateRequest, RequisitionCreateResponse, RequisitionUpdateResponse>, IRequisitionController
 {
-    public RequisitionsController(IRequisitionsService service) : base(service)
+    public RequisitionController(IPositionsService service) : base(service)
     {
     }
 

@@ -36,4 +36,9 @@ public class Employee : IGenericModel
     public int UserId { get; set; }
         
     public User User { get; set; }
+
+    [Column("position_id")]
+    public int PositionId { get; set; }
+
+    public Position Position { get; set; }
 }

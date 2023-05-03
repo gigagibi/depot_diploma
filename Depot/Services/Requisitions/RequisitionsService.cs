@@ -10,7 +10,7 @@ using Depot.Repositories.Requisitions.RequisitionStatuses;
 
 namespace Depot.Services.Requisitions;
 
-public class RequisitionsService : GenericDictionaryCrudService<Requisition, IRequisitionsRepository, RequisitionGetResponse, RequisitionUpdateRequest, RequisitionCreateRequest, RequisitionUpdateResponse, RequisitionCreateResponse>, IRequisitionsService
+public class RequisitionsService : GenericDictionaryCrudService<Requisition, IRequisitionsRepository, RequisitionGetResponse, RequisitionsUpdateRequest, RequisitionsCreateRequest, RequisitionUpdateResponse, RequisitionCreateResponse>, IRequisitionsService
 {
     private IRequisitionStatusesRepository _statusesRepository;
     public RequisitionsService(IRequisitionsRepository repository, IMapper mapper, IRequisitionStatusesRepository statusesRepository) : base(repository, mapper)

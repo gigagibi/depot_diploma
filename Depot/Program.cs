@@ -31,6 +31,7 @@ using Depot.Services.Entities.EntityModels;
 using Depot.Services.Requisitions;
 using Depot.Services.Requisitions.RequisitionStatuses;
 using Depot.Services.Transactions;
+using Depot.Services.Positions;
 
 // TODO Функционал оператора
 // TODO Изменение функционала сотрудника чтобы создавалась заявка
@@ -145,6 +146,7 @@ builder.Services.AddScoped<ITransactionsService, TransactionsService>();
 builder.Services.AddScoped<ITransactionTypesService, TransactionTypesService>();
 builder.Services.AddScoped<IRequisitionStatusesService, RequisitionStatusesService>();
 builder.Services.AddScoped<IRequisitionsService, RequisitionsService>();
+builder.Services.AddScoped<IPositionsService, PositionsService>();
 builder.Services.AddScoped<JwtHelper>();
 
 var app = builder.Build();

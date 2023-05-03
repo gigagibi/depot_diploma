@@ -1,6 +1,6 @@
 ﻿namespace Depot.API.Requisitions.Requests;
 
-public class RequisitionUpdateRequest
+public class RequisitionsUpdateRequest
 {
     public int RequisitionStatusId { get; set; }
     public int EntityId { get; set; }
